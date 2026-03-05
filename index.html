@@ -679,23 +679,23 @@ footer{
 <script>
 /* ── MACHINES ── */
 const MACHINES = [
-  { id:"L-01", name:"Lame",       os:"linux",   diff:"easy",   tags:["SMB","CVE-2007-2447","Samba"],        pwned:true,  url:"https://github.com/davidjr-005/Hacking-Etico/tree/main/WriteUps/linux/lame" },
-  { id:"L-02", name:"Beep",       os:"linux",   diff:"easy",   tags:["Elastix","LFI","SMTP"],              pwned:true,  url:"https://github.com/davidjr-005/Hacking-Etico/tree/main/WriteUps/linux/beep" },
-  { id:"L-03", name:"Bashed",     os:"linux",   diff:"easy",   tags:["phpbash","Sudo","Cron"],             pwned:true,  url:"https://github.com/davidjr-005/Hacking-Etico/tree/main/WriteUps/linux/bashed" },
-  { id:"L-04", name:"Cronos",     os:"linux",   diff:"medium", tags:["DNS","SQLi","Command Injection"],    pwned:true,  url:"https://github.com/davidjr-005/Hacking-Etico/tree/main/WriteUps/linux/cronos" },
-  { id:"L-05", name:"SolidState", os:"linux",   diff:"medium", tags:["James Mail","RBASH Escape"],        pwned:true,  url:"https://github.com/davidjr-005/Hacking-Etico/tree/main/WriteUps/linux/solidstate" },
+  { id:"L-01", name:"Lame",       os:"linux",   diff:"easy",   tags:["SMB","CVE-2007-2447","Samba"],        pwned:false,  url:"https://github.com/davidjr-005/Hacking-Etico/tree/main/WriteUps/linux/lame" },
+  { id:"L-02", name:"Beep",       os:"linux",   diff:"easy",   tags:["Elastix","LFI","SMTP"],              pwned:false,  url:"https://github.com/davidjr-005/Hacking-Etico/tree/main/WriteUps/linux/beep" },
+  { id:"L-03", name:"Bashed",     os:"linux",   diff:"easy",   tags:["phpbash","Sudo","Cron"],             pwned:false,  url:"https://github.com/davidjr-005/Hacking-Etico/tree/main/WriteUps/linux/bashed" },
+  { id:"L-04", name:"Cronos",     os:"linux",   diff:"easy", tags:["DNS","SQLi","Command Injection"],    pwned:false,  url:"https://github.com/davidjr-005/Hacking-Etico/tree/main/WriteUps/linux/cronos" },
+  { id:"L-05", name:"SolidState", os:"linux",   diff:"easy", tags:["James Mail","RBASH Escape"],        pwned:false,  url:"https://github.com/davidjr-005/Hacking-Etico/tree/main/WriteUps/linux/solidstate" },
   { id:"L-06", name:"Nibbles",    os:"linux",   diff:"easy",   tags:["Nibbleblog","File Upload","Sudo"],  pwned:false, url:"#" },
   { id:"L-07", name:"Shocker",    os:"linux",   diff:"easy",   tags:["Shellshock","Apache","Perl"],       pwned:false, url:"#" },
   { id:"L-08", name:"Blocky",     os:"linux",   diff:"easy",   tags:["WordPress","JAR Decompile","SSH"],  pwned:false, url:"#" },
-  { id:"L-09", name:"Poison",     os:"linux",   diff:"medium", tags:["LFI","Log Poisoning","VNC"],        pwned:false, url:"#" },
-  { id:"L-10", name:"Brainfuck",  os:"linux",   diff:"hard",   tags:["WordPress","IMAP","RSA Crypto"],    pwned:false, url:"#" },
-  { id:"W-01", name:"Blue",       os:"windows", diff:"easy",   tags:["EternalBlue","MS17-010","SMB"],      pwned:true,  url:"https://github.com/davidjr-005/Hacking-Etico/tree/main/WriteUps/windows/blue" },
-  { id:"W-02", name:"Optimum",    os:"windows", diff:"easy",   tags:["HttpFileServer","CVE-2014-6287"],   pwned:true,  url:"https://github.com/davidjr-005/Hacking-Etico/tree/main/WriteUps/windows/optimum" },
-  { id:"W-03", name:"Access",     os:"windows", diff:"easy",   tags:["FTP","Telnet","Stored Creds"],      pwned:true,  url:"https://github.com/davidjr-005/Hacking-Etico/tree/main/WriteUps/windows/access" },
-  { id:"W-04", name:"Bastard",    os:"windows", diff:"medium", tags:["Drupal","CVE-2018-7600","RCE"],     pwned:false, url:"#" },
+  { id:"L-09", name:"Poison",     os:"linux",   diff:"easy", tags:["LFI","Log Poisoning","VNC"],        pwned:false, url:"#" },
+  { id:"L-10", name:"Brainfuck",  os:"linux",   diff:"easy",   tags:["WordPress","IMAP","RSA Crypto"],    pwned:false, url:"#" },
+  { id:"W-01", name:"Blue",       os:"windows", diff:"easy",   tags:["EternalBlue","MS17-010","SMB"],      pwned:false,  url:"https://github.com/davidjr-005/Hacking-Etico/blob/main/WriteUps/M1%20-%20Blue/README.md" },
+  { id:"W-02", name:"Optimum",    os:"windows", diff:"easy",   tags:["HttpFileServer","CVE-2014-6287"],   pwned:false,  url:"https://github.com/davidjr-005/Hacking-Etico/tree/main/WriteUps/windows/optimum" },
+  { id:"W-03", name:"Access",     os:"windows", diff:"easy",   tags:["FTP","Telnet","Stored Creds"],      pwned:false,  url:"https://github.com/davidjr-005/Hacking-Etico/tree/main/WriteUps/windows/access" },
+  { id:"W-04", name:"Bastard",    os:"windows", diff:"easy", tags:["Drupal","CVE-2018-7600","RCE"],     pwned:false, url:"#" },
   { id:"W-05", name:"Grandpa",    os:"windows", diff:"easy",   tags:["IIS 6.0","WebDAV","Token"],         pwned:false, url:"#" },
   { id:"W-06", name:"Granny",     os:"windows", diff:"easy",   tags:["WebDAV","Token Kidnapping"],        pwned:false, url:"#" },
-  { id:"W-07", name:"Jeeves",     os:"windows", diff:"medium", tags:["Jenkins","Pass-the-Hash","KeePass"],pwned:false, url:"#" },
+  { id:"W-07", name:"Jeeves",     os:"windows", diff:"easy", tags:["Jenkins","Pass-the-Hash","KeePass"],pwned:false, url:"#" },
   { id:"W-08", name:"Arctic",     os:"windows", diff:"easy",   tags:["ColdFusion","LFI","CVE-2010"],      pwned:false, url:"#" },
 ];
 
@@ -773,4 +773,5 @@ window.addEventListener('scroll', () => {
 </script>
 </body>
 </html>
+
 
